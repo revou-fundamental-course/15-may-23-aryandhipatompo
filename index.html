@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Katik</title>
+</head>
+<body>
+    <header>
+        <p class="judul"><span>Katik </span> Kalkulator Matematik</p>
+    </header>
+
+    <!-- INI BAGIAN UNTUK MENGHITUNG LUAS PERSEGI -->
+    <section>
+        <div class="container">
+            <h2 class="sub-atas">Welcome to Katik</h2>
+            <br>Hai Sobat! Selamat datang di Katik :]
+            <br>Sebuah web apps sederhana yang berfungsi untuk meghitung nilai luas dan keliling bangun datar</h2>
+            
+            <div class="content">
+                <h2 class="sub-tengah">Luas Persegi</h2>
+                
+                    <table class="tabel">
+                        <tr>
+                            <td>A</td>
+                            <td> </td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="persegi"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>Bujur sangkar</td>
+                            <td>C</td>
+                        </tr>
+                    </table>
+
+                <p>Rumus Luas Persegi yaitu :</p>
+                <h4>L = S x S</h4>
+                <p>Di mana:
+                    <br> L = Luas
+                    <br> S = Sisi
+                </p>
+                <hr>
+                <h2 class="sub-bawah">Hitung Luas Persegi</h2>
+                
+                <input class="txt-nilai" type="number" placeholder="Nilai Sisi" id="sisi-luas" onkeydown="clearLuas()">
+                <br><button class="btn-hitung" type="submit" id="hitung-luas" onclick="hitungLuas()">Hitung</button>
+
+                <form class="hasil-luas">
+                        <input style="border: 0;" type="text" id="rumusLuas" readonly disabled><br>
+                        <input style="border: 0;" type="text" id="hitungLuas" readonly disabled><br>
+                        <input style="border: 0;" type="text" id="hasilLuas" readonly disabled>
+                </form>
+                <br><button class="btn-reset" type="submit" id="btnReset" onclick="resetLuas()">Reset</button>                
+            </div>
+        </div>
+    </section>
+
+    <!-- INI BAGIAN UNTUK MENGHITUNG KELILING PERSEGI -->
+    <section>
+        <div class="container">
+            <div class="content">
+                <h2 class="sub-tengah">Keliling Persegi</h2>
+                
+                    <table class="tabel">
+                        <tr>
+                            <td>A</td>
+                            <td> </td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="persegi"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>Bujur sangkar</td>
+                            <td>C</td>
+                        </tr>
+                    </table>
+
+                <p>Rumus Keliling Persegi yaitu :</p>
+                <h4>K = 4 x S</h4>
+                <p>Di mana:
+                    <br> K = Keliling
+                    <br> S = Sisi
+                </p>
+                <hr>
+                <h2 class="sub-bawah">Hitung Keliling Persegi</h2>
+                
+                <input class="txt-nilai" type="number" placeholder="Nilai Sisi" id="sisi-keliling" onkeydown="clearKeliling()">
+                <br><button class="btn-hitung" type="submit" id="hitung-keliling" onclick="hitungKeliling()">Hitung</button>
+
+                <form class="hasil-keliling">
+                        <input style="border: 0;" type="text" id="rumusKeliling" readonly disabled><br>
+                        <input style="border: 0;" type="text" id="hitungKeliling" readonly disabled><br>
+                        <input style="border: 0;" type="text" id="hasilKeliling" readonly disabled>
+                </form>
+                <br><button class="btn-reset" type="submit" id="btnReset" onclick="resetKeliling()">Reset</button>                
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
