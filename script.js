@@ -1,3 +1,4 @@
+alert("Selamat datang di Mini Project Aryandhi :)");
 function hitungLuas() {
     var sisiLuas = document.getElementById('sisi-luas').value;
     var result;
